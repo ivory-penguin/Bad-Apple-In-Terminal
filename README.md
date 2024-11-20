@@ -89,3 +89,7 @@ The `.BadApple` file is not playable in any standard video player, nor is it sup
 **Performance Considerations:** The video is rendered as a sequence of characters in the terminal, so the rendering speed depends heavily on your terminal’s performance and your system’s capabilities. On a fast terminal like [Alacritty](https://github.com/alacritty/alacritty), the video should play smoothly, but on slower systems or terminals, the playback may be choppy. Setting the frame rate down can reduce this issue but the video will play slower unless you also make a custom video with its own frame rate
 
 **Cross-Platform Compatibility:** The script has been tested on Linux (Kali) but should work on other major operating systems as well, such as Windows. However, performance may vary depending on the terminal emulator you are using and I cannot guarantee that it will work.
+
+
+
+
