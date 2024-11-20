@@ -1,0 +1,9 @@
+# idk what i'm doing with a gitignore tbh
+
+# add the folder but not the contents
+video/*
+!video/
+
+# normal stuff
+__pycache__/
+.vscode/
