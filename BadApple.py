@@ -151,7 +151,7 @@ def PrintFrame(frame):
     # Flushing the output makes it render slightly faster in testing
     print(''.join(constructed_frame), flush=True)
 
-    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if __name__ == "__main__":
     # clear the terminal
     print("\033c")
