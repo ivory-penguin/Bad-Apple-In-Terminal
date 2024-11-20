@@ -149,7 +149,7 @@ def PrintFrame(frame):
         constructed_frame.append('\n')
 
     # Flushing the output makes it render slightly faster in testing
-    print(''.join(constructed_frame), flush=True)
+    print('\033[H', ''.join(constructed_frame), flush=True)
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 if __name__ == "__main__":
@@ -174,7 +174,7 @@ if __name__ == "__main__":
         elapsed_time: float = time() - start + time_debt
 
         # Calculate if we're behind time and adjust time debt if so
-        time_debt = 0 if elapsed_time > FRAME_TIME else elapsed_time - FRAME_TIME
+        time_debt = elapsed_time - FRAME_TIME if elapsed_time > FRAME_TIME else 0
 
         # sleeping until the end of the frame ensures that we're running at constant frame rate
         sleep(max((FRAME_TIME) - elapsed_time, 0))
